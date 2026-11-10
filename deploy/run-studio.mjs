@@ -21,7 +21,7 @@ async function shutdown(code) {
   if(stopping)return;
   stopping=true;
   const exits=children.map(child=>new Promise(resolve=>{if(child.exitCode!==null||child.signalCode!==null)resolve();else {child.once("exit",resolve);child.kill("SIGTERM");}}));
-  const timer=setTimeout(()=>{for(const child of children){try{process.platform!=="win32"?process.kill(-child.pid,"SIGKILL"):child.kill("SIGKILL");}catch{}}process.exit(code);},240_000);
+  const timer=setTimeout(()=>{for(const child of children){try{process.platform!=="win32"?process.kill(-child.pid,"SIGKILL"):child.kill("SIGKILL");}catch{}}process.exit(code);},25_000);
   await Promise.all(exits);clearTimeout(timer);process.exit(code);
 }
 process.on("SIGTERM",()=>void shutdown(0));process.on("SIGINT",()=>void shutdown(0));

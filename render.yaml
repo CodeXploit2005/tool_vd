@@ -9,7 +9,6 @@ services:
     region: singapore
     autoDeployTrigger: 'off'
     healthCheckPath: /api/ready
-    maxShutdownDelaySeconds: 300
     disk:
       name: studio-media
       mountPath: /var/data/studio
@@ -47,7 +46,6 @@ services:
     plan: standard
     region: singapore
     autoDeployTrigger: 'off'
-    maxShutdownDelaySeconds: 300
     disk:
       name: muse-sessions
       mountPath: /var/data/muse

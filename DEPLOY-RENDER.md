@@ -45,7 +45,7 @@ Các biến thực tế chỉ nhập trong Render, không sửa `.env.example` t
 ## Giới hạn đã biết
 
 - Đây là Studio cá nhân/nhóm tin cậy với một lớp đăng nhập chung; chưa có phân quyền và dữ liệu riêng cho từng khách.
-- Persistent disk giữ file qua restart nhưng làm deploy phải tạm dừng instance cũ. Dừng gửi job mới và đợi render xong trước khi Manual Deploy.
+- Persistent disk giữ file qua restart nhưng làm deploy phải tạm dừng instance cũ. Render không cho đặt `maxShutdownDelaySeconds` với dịch vụ có disk; bản này dùng thời gian mặc định của Render và supervisor dừng cưỡng bức sau tối đa 25 giây. Dừng gửi job mới và đợi render xong trước khi Manual Deploy.
 - Muse có thể yêu cầu OTP, từ chối prompt, chặn vùng hoặc giới hạn tài khoản. Hạ tầng Render không bảo đảm Muse sẽ chấp nhận IP datacenter; thử trên tài khoản của bạn trước khi chạy quy mô lớn.
 - Máy chuẩn bị mã chưa có Docker engine đang chạy; cấu hình Docker chưa được build/chạy tại đây và chưa tạo tài nguyên Render thật. Xem VALIDATION.md.
 
