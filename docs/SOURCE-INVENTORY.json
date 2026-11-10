@@ -1,0 +1,1123 @@
+{
+  "source_files": [
+    {
+      "path": "moonreel/.gitignore",
+      "bytes": 55,
+      "sha256": "da2758e2071369f4586b9966fd4ef9e70edbf120d913dff561ed5108f23469b5"
+    },
+    {
+      "path": "moonreel/CONTRIBUTING.md",
+      "bytes": 7166,
+      "sha256": "78adf524fe7c6025a3a9807c7662cde3dc9079f39e7a58340938585b909556ad"
+    },
+    {
+      "path": "moonreel/LICENSE",
+      "bytes": 1087,
+      "sha256": "72320ad5a6d92f339235717ee88eff4e5ad29aa7a7a4c0feda379c91319b558f"
+    },
+    {
+      "path": "moonreel/README.md",
+      "bytes": 6217,
+      "sha256": "5339dadc3de85fc2726bce1f5a513c08f1643921f56484958c21d4f9db6f66c0"
+    },
+    {
+      "path": "moonreel/.github/PULL_REQUEST_TEMPLATE.md",
+      "bytes": 628,
+      "sha256": "29fb2922e46dad0894f4e44d19b7ed89b84f4fe522f6b2481bcd9764a330961b"
+    },
+    {
+      "path": "moonreel/.github/ISSUE_TEMPLATE/bug_report.md",
+      "bytes": 476,
+      "sha256": "7920841ff2b1fd9fb07cbe3e708f7b6e43b443332605df8b7410a277e99abceb"
+    },
+    {
+      "path": "moonreel/.github/ISSUE_TEMPLATE/config.yml",
+      "bytes": 219,
+      "sha256": "8890865d135620b020fd6b0088e03ea57b8049fdf823a926869f883ceedae725"
+    },
+    {
+      "path": "moonreel/.github/ISSUE_TEMPLATE/feature_request.md",
+      "bytes": 457,
+      "sha256": "f4467ceada3603d585f7033cccfc77bfa7eee4abbb498c41d49ef1e32e7fcf66"
+    },
+    {
+      "path": "moonreel/moonreel-studio/.env.example",
+      "bytes": 872,
+      "sha256": "54c6e9bb39bdf059b473119714ab04cadf550a2c1b2ccb61560d9f7c9465658b"
+    },
+    {
+      "path": "moonreel/moonreel-studio/.gitignore",
+      "bytes": 632,
+      "sha256": "91b977f81aedabe6cd88e8967ddc0f90d7d82074f7e8d1ebe54b4d336abe46e9"
+    },
+    {
+      "path": "moonreel/moonreel-studio/AGENTS.md",
+      "bytes": 688,
+      "sha256": "d273860cb120cdc0c127d565b196d6846274ad3933d5848932659c2a0b193898"
+    },
+    {
+      "path": "moonreel/moonreel-studio/docker-compose.yml",
+      "bytes": 1102,
+      "sha256": "4448a19ab50aa56c3df48c0d87739180fd2065ad3885b2e509417b627cf7fdf3"
+    },
+    {
+      "path": "moonreel/moonreel-studio/drizzle.config.ts",
+      "bytes": 217,
+      "sha256": "ad95cfa13274dd51e73ba26241ff12df8d4604040279100c618103120217375f"
+    },
+    {
+      "path": "moonreel/moonreel-studio/eslint.config.mjs",
+      "bytes": 483,
+      "sha256": "275a07c13fc7c83a652efcfa9fb6a207c451a2f5088e6793415ce44281285720"
+    },
+    {
+      "path": "moonreel/moonreel-studio/next.config.ts",
+      "bytes": 538,
+      "sha256": "e7790834ac53fa336eaa29390cf025fc75d08fe240707cafd9724df10191b07f"
+    },
+    {
+      "path": "moonreel/moonreel-studio/package.json",
+      "bytes": 1832,
+      "sha256": "b6d510a659268a65a5c88f616b2ae4d94491e0b1d598046f8e27f420772c8c72"
+    },
+    {
+      "path": "moonreel/moonreel-studio/pnpm-lock.yaml",
+      "bytes": 187554,
+      "sha256": "b2a89a1842abbab9112ac0211b7c3de2ae1641dbb22844cdc7ec80605194fb23"
+    },
+    {
+      "path": "moonreel/moonreel-studio/README.md",
+      "bytes": 38809,
+      "sha256": "e1c37e5b0ecb85ec6232681a2d7912a48f339657b52263ecd57c47fa06b6fde9"
+    },
+    {
+      "path": "moonreel/moonreel-studio/tsconfig.json",
+      "bytes": 704,
+      "sha256": "dbacf04aa5f38c1ce4b0f030fbb84e5adff19306fb785b2e4aafef9c58705658"
+    },
+    {
+      "path": "moonreel/moonreel-studio/assets/fonts/Anton-Regular.ttf",
+      "bytes": 161588,
+      "sha256": "97aae409210d255fb3b92f18c8af2ed14941e10a1ee134a35bb91f52086de1d0"
+    },
+    {
+      "path": "moonreel/moonreel-studio/assets/fonts/Montserrat-Black.ttf",
+      "bytes": 343296,
+      "sha256": "b48e6741b9889ede4ffe3d8acfda3e6917c62127537b19fe7206cba04e6ebb63"
+    },
+    {
+      "path": "moonreel/moonreel-studio/assets/fonts/Montserrat-Bold.ttf",
+      "bytes": 335788,
+      "sha256": "7fa93d7daa5c2f881a6727229c211782de6b76008fbd6346b3d7664e8fc83f43"
+    },
+    {
+      "path": "moonreel/moonreel-studio/assets/fonts/OFL-anton.txt",
+      "bytes": 4484,
+      "sha256": "ee67e6ee22790b7929f1a3769ca2801d565c64b5a9096942c1adf5596de9c9e4"
+    },
+    {
+      "path": "moonreel/moonreel-studio/assets/fonts/OFL-montserrat.txt",
+      "bytes": 4492,
+      "sha256": "41cbef8d8a37b9e58a3c613a8958014bfc58801569c40211dfb251f600c6d718"
+    },
+    {
+      "path": "moonreel/moonreel-studio/assets/fonts/OFL-oswald.txt",
+      "bytes": 4483,
+      "sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652"
+    },
+    {
+      "path": "moonreel/moonreel-studio/assets/fonts/Oswald-Bold.ttf",
+      "bytes": 87600,
+      "sha256": "21843a0ccca2e97030da1330961646510ed6e9b8bb39620974c1195b9803034a"
+    },
+    {
+      "path": "moonreel/moonreel-studio/docker/muse2api-session-cookies.patch",
+      "bytes": 3094,
+      "sha256": "30db70385ec8c6dc9e1f63736710de292896e1d59500745f3c3dba6f62201f55"
+    },
+    {
+      "path": "moonreel/moonreel-studio/docs/ARCHITECTURE.md",
+      "bytes": 14174,
+      "sha256": "fd3103ba69b791af921bf8bf58e44797b08111739fe5074b54c3ac53f36c1246"
+    },
+    {
+      "path": "moonreel/moonreel-studio/docs/images/dashboard.jpg",
+      "bytes": 104017,
+      "sha256": "d60bb3a6ec6cda9ad90098ec49e493ceaec71f6259b7d9f0fae474e082c4e730"
+    },
+    {
+      "path": "moonreel/moonreel-studio/docs/images/demo.gif",
+      "bytes": 7822111,
+      "sha256": "0a67f970a60b4109a335d960a52b21e4c2f92be6e2808a7575ec85de8b488355"
+    },
+    {
+      "path": "moonreel/moonreel-studio/docs/images/new-video.jpg",
+      "bytes": 130566,
+      "sha256": "2880e57b310106c63b64e3dc1febb9b186dd9ba8caf883690f82113252511050"
+    },
+    {
+      "path": "moonreel/moonreel-studio/docs/images/niche-picker.jpg",
+      "bytes": 132915,
+      "sha256": "c83860798bc1a09574219fa5275262d9e2eb6c41fbfb9a2f9da9b7318266c774"
+    },
+    {
+      "path": "moonreel/moonreel-studio/docs/images/production.jpg",
+      "bytes": 157217,
+      "sha256": "426d6de3e7f4ec6ba1fa3ada5d2d3d430addbb1eae162eb815456926204ce326"
+    },
+    {
+      "path": "moonreel/moonreel-studio/docs/images/project.jpg",
+      "bytes": 122178,
+      "sha256": "4915ed0caab661041682c4377957b1a419fa47c6b6bf9d25d524d46cbdba906b"
+    },
+    {
+      "path": "moonreel/moonreel-studio/docs/images/script.jpg",
+      "bytes": 152708,
+      "sha256": "a15d6896baa4f4a362954d55357c937cb9e6747a8d52c922f60ab950a9bf2af2"
+    },
+    {
+      "path": "moonreel/moonreel-studio/public/brand/keyzone-logo.png",
+      "bytes": 471794,
+      "sha256": "f7f1c561cba5fbdb6152406224048fccacdc280406383c4c8dd6662183303304"
+    },
+    {
+      "path": "moonreel/moonreel-studio/public/thumbnail-fonts/Anton-Regular.ttf",
+      "bytes": 161588,
+      "sha256": "97aae409210d255fb3b92f18c8af2ed14941e10a1ee134a35bb91f52086de1d0"
+    },
+    {
+      "path": "moonreel/moonreel-studio/public/thumbnail-fonts/Montserrat-Black.ttf",
+      "bytes": 343296,
+      "sha256": "b48e6741b9889ede4ffe3d8acfda3e6917c62127537b19fe7206cba04e6ebb63"
+    },
+    {
+      "path": "moonreel/moonreel-studio/public/thumbnail-fonts/Montserrat-Bold.ttf",
+      "bytes": 335788,
+      "sha256": "7fa93d7daa5c2f881a6727229c211782de6b76008fbd6346b3d7664e8fc83f43"
+    },
+    {
+      "path": "moonreel/moonreel-studio/public/thumbnail-fonts/OFL-anton.txt",
+      "bytes": 4484,
+      "sha256": "ee67e6ee22790b7929f1a3769ca2801d565c64b5a9096942c1adf5596de9c9e4"
+    },
+    {
+      "path": "moonreel/moonreel-studio/public/thumbnail-fonts/OFL-montserrat.txt",
+      "bytes": 4492,
+      "sha256": "41cbef8d8a37b9e58a3c613a8958014bfc58801569c40211dfb251f600c6d718"
+    },
+    {
+      "path": "moonreel/moonreel-studio/public/thumbnail-fonts/OFL-oswald.txt",
+      "bytes": 4483,
+      "sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652"
+    },
+    {
+      "path": "moonreel/moonreel-studio/public/thumbnail-fonts/Oswald-Bold.ttf",
+      "bytes": 87600,
+      "sha256": "21843a0ccca2e97030da1330961646510ed6e9b8bb39620974c1195b9803034a"
+    },
+    {
+      "path": "moonreel/moonreel-studio/scripts/add-product-reference.mjs",
+      "bytes": 464,
+      "sha256": "50ffdaf5975629f89efe20a01673a144ded22e8b22f5314a54287a8c0864230c"
+    },
+    {
+      "path": "moonreel/moonreel-studio/scripts/add-script-import.mjs",
+      "bytes": 325,
+      "sha256": "758de396dda87152de23c5f478c062bacb2ac1034f383dbd555ef06bee692d02"
+    },
+    {
+      "path": "moonreel/moonreel-studio/scripts/check-database.mjs",
+      "bytes": 501,
+      "sha256": "675fd7ffab494e94bd58b5e88a04d0c71627ba2aff98dbb01e53f65fee7431ca"
+    },
+    {
+      "path": "moonreel/moonreel-studio/scripts/check-media-stream.mjs",
+      "bytes": 2225,
+      "sha256": "0999067cf2a05d865e82aa7c564785a45494a442411b1c3b2cd5d04f7ae7d475"
+    },
+    {
+      "path": "moonreel/moonreel-studio/scripts/default-niches.ts",
+      "bytes": 3646,
+      "sha256": "e4d00d262a04173233adc664b80e0c024fdb0e5fdaa98644913030003c39f4dc"
+    },
+    {
+      "path": "moonreel/moonreel-studio/scripts/export-niches.ts",
+      "bytes": 881,
+      "sha256": "bdfeee4a0df316a86ee0009d96799b32e81d38eb3a0bb1a850b2d566de44f921"
+    },
+    {
+      "path": "moonreel/moonreel-studio/scripts/private-niches.ts",
+      "bytes": 3532,
+      "sha256": "16423c477d4829726aa660ceeccc14defc1e8540ff97acdfd6206c5a6b1c6cf3"
+    },
+    {
+      "path": "moonreel/moonreel-studio/scripts/seed.ts",
+      "bytes": 717,
+      "sha256": "283771bad8e6bbbc191687d29e7ae47697d3e5b8c9e218dfe982a31fcce94e15"
+    },
+    {
+      "path": "moonreel/moonreel-studio/scripts/upgrade-0.4.0.sql",
+      "bytes": 2129,
+      "sha256": "3778bcdfcf1a3b8df246c097febd3543c496a4022450cd8c65c325815dd05923"
+    },
+    {
+      "path": "moonreel/moonreel-studio/scripts/verify-script-import.mjs",
+      "bytes": 3088,
+      "sha256": "56e73a36da9daa60ff1acc4dc7a06d1c759ac3fdc6732f891ef0aa1daf4d8aa5"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/proxy.ts",
+      "bytes": 793,
+      "sha256": "d8291de9240ae428bcf0e257eaa95e60c8e5857344dade361dda2c9b13961de8"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/actions.ts",
+      "bytes": 28129,
+      "sha256": "f9ec01de51254323ff7b7f45e096a08936003f3761d58946642978fc9c6242e9"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/globals.css",
+      "bytes": 31168,
+      "sha256": "b6e3dfc5c0a3f1b4ca2c2d97901d02b6de1da67b6b1f306b6cee43b409ab21ec"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/icon.svg",
+      "bytes": 405,
+      "sha256": "31a2b8bb87c311c2ffdeceeea1aab97847f0ad29f7742e56d401e44ca0b5734e"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/niche-editor-data.ts",
+      "bytes": 1263,
+      "sha256": "5b1c37af6ed1343cf88cdf33f173acdeb1507687868fbd0babab30b281f9eaa4"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/storyboard-actions.ts",
+      "bytes": 1170,
+      "sha256": "5edb7438b3bfb26a58b524f560c871be6f803750da77ab0a799019d12117e40c"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/api/files/[...path]/route.ts",
+      "bytes": 2172,
+      "sha256": "a46d2c0adc4d00399aa386ee4388c5b5d2cb2a62173ebe0f888a20f4ddb85729"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/api/health/route.ts",
+      "bytes": 444,
+      "sha256": "ec45cbbe0ee51160737a04e6e8a783567843b9e05cbf10bf8a25bf3a7ebf4a74"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/api/muse-connect/route.ts",
+      "bytes": 5406,
+      "sha256": "fadf6932ebf741a3329ffba0f87b07e6a02107412e3de81234d8cffca5893f93"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/api/projects/[id]/route.ts",
+      "bytes": 422,
+      "sha256": "5ae95ab67b9d65f184fb741c79f8d72d153e8fa7c88404b9f9f1d6463235a6cf"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/api/uploads/audio/route.ts",
+      "bytes": 2197,
+      "sha256": "9c2422414a1895d569d08b559dfe0e5c0281d2b3487151a70208d7e4e5c05947"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/api/uploads/image/route.ts",
+      "bytes": 1766,
+      "sha256": "3df32a36c92b3e97d9de15af44d7b9a457af555265053853c7f43f7ed413a8f1"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/error.tsx",
+      "bytes": 932,
+      "sha256": "caf8d0d186c734265ce60a0f953b69ef1bc075d85f454a56563ed927ccb9f152"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/layout.tsx",
+      "bytes": 4659,
+      "sha256": "9b6e8641324fc7ea2561aa2f160304aa12161e3ae061a9c2b15ed6d7346102c9"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/not-found.tsx",
+      "bytes": 450,
+      "sha256": "bd43af51d2dd67b3de3c80a066a1729d72bf5a7911135bd458714e71df532c10"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/page.tsx",
+      "bytes": 9199,
+      "sha256": "84587ad41821d2f2c24c2065977144738e735029344df4748d6b1ab77475e609"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/accounts/page.tsx",
+      "bytes": 573,
+      "sha256": "e81ab4eda95f654dfe3a2cd2dff2fbccf797fa0d99944cd02f7c9c9928b6c682"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/characters/character-form.tsx",
+      "bytes": 5881,
+      "sha256": "e238fe707019cb4371c2854cf98b92f97533289f06435fea465433272b12dd9c"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/characters/page.tsx",
+      "bytes": 3512,
+      "sha256": "aa6ae41f69a1a6c2371898d1f3b365d6f81d088fdf946213c96f0dcd7a3382fe"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/characters/new/page.tsx",
+      "bytes": 639,
+      "sha256": "96dfaf28abdac24a51d47a1ab4355c106c1f77b7fe89224335839d7324762fa1"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/characters/[id]/page.tsx",
+      "bytes": 1408,
+      "sha256": "a38abc6e8cbf1e736ae2f56fb735cb5ea1fe316344321e9e81ee485c12bf8ba9"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/guides/facebook/page.tsx",
+      "bytes": 4074,
+      "sha256": "bd55d6503894a53f86b084e06fea166767390057275f4788bc7676d5dd0dcf14"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/niches/niche-form.tsx",
+      "bytes": 16666,
+      "sha256": "33229a7837ffd69d0f0daedce616fca5ff132a3968d6105b4949059b841add96"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/niches/page.tsx",
+      "bytes": 497,
+      "sha256": "d171fc923ac7413bad7063712a997418da678e5e6d90972791b374590e01cd57"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/niches/new/page.tsx",
+      "bytes": 886,
+      "sha256": "82409e64bb6b8f7c8a0ab58544f8a8302f1ec43d1195ade5df2dcc158239d64f"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/niches/[id]/page.tsx",
+      "bytes": 2111,
+      "sha256": "c1b9309ffc2cdbaf1b8bbf1c56a957e31cc7909c3549c6ac20e820895fb840b0"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/projects/new/page.tsx",
+      "bytes": 10486,
+      "sha256": "c9efdbcd54d6b518d1fbc1c5b37d4ce53fe18b967e889865b756acb5b29551e2"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/projects/[id]/page.tsx",
+      "bytes": 772,
+      "sha256": "20f23fccdec2fe7c495f605de5b212d349d777e19504872a54e1c510788b9558"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/projects/[id]/project-editor.tsx",
+      "bytes": 68207,
+      "sha256": "2a59e659381846b497ab178c618696519ebb3f84a8a538e23b300e36ee67bfa9"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/app/[lang]/[...missing]/page.tsx",
+      "bytes": 203,
+      "sha256": "36a1d119f8022e2e6fa48ab8eb0a6d7352560b18cb7047e37d5d3f685261b248"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/accounts-panel.tsx",
+      "bytes": 7011,
+      "sha256": "cde78bac7909c8dcd66a868f14a90244fc5df74772427dcb9772debc900b7c7e"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/cast-picker.tsx",
+      "bytes": 3194,
+      "sha256": "6789406667a44667570a24b36abb4c5b16b8308cb20892d9217fcef34f6ee18b"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/delete-character-button.tsx",
+      "bytes": 3124,
+      "sha256": "9cf73bca63845752d3c941efc9d30054633fc567f517451190d57e0bc77edf3f"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/delete-muse-account-dialog.tsx",
+      "bytes": 2930,
+      "sha256": "8b4829557313b09d6114f93b4d86c08ca8f2a20866dbcc5526429819ee5a8680"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/delete-video-button.tsx",
+      "bytes": 2958,
+      "sha256": "70562515215c744ddb3c9e496b066088c66fa1fc1378fdc4c87767a8d350fe09"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/health-badge.tsx",
+      "bytes": 2248,
+      "sha256": "e831bfcf55763a60b18e20c706fd6ae33823ecd6a7529dde0acdda56301cd36d"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/language-switcher.tsx",
+      "bytes": 1486,
+      "sha256": "8dac87ba1ae79ed332c770a01ddbd8d7485e4da4514263868023d8432a10cb85"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/logo.tsx",
+      "bytes": 489,
+      "sha256": "41362405f5d0b9ecf2ad5bff480f403a47bcf3a090d6f82269869a5d0564dee2"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/muse-connect-dialog.tsx",
+      "bytes": 17650,
+      "sha256": "1c6913af669abbde6ba731edf4d20821cf855653da2ecef2e886661c8f65e4e6"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/nav-links.tsx",
+      "bytes": 2985,
+      "sha256": "81a6395e2bd5dab5a879852146f2ea0086eacfce68d38e51d864786ac9ff1b56"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/navigation-motion.tsx",
+      "bytes": 927,
+      "sha256": "f892f785d209fb37ba23f383b698b9d3b0727acc1641b522de253627e126a560"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/niche-editor-link.tsx",
+      "bytes": 4879,
+      "sha256": "84d9b6bb2d0de6eb18f49d5641edfc4d9242961e95640de028597b2313b761d7"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/niche-icon.tsx",
+      "bytes": 1535,
+      "sha256": "f545047da9fb62af19636c0fe40407b0be9947f5bdacaf45bf6888d71993ca49"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/niche-picker.tsx",
+      "bytes": 6548,
+      "sha256": "5ad77a18b028d37bc7b9cae405f2b9469d0427c5c8202c1b4b64771dc54421c8"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/niche-switcher.tsx",
+      "bytes": 4011,
+      "sha256": "b8efc816d0b258e00c03ff283b1c4d7412a46993af0a1d26dc0711cc35851440"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/processing-panel.tsx",
+      "bytes": 1468,
+      "sha256": "b494e971891a5d37efd6f66d419e69eb8ffdc642c6dcc508629f7d4dee099b77"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/product-reference.tsx",
+      "bytes": 6090,
+      "sha256": "d860a6b16726f24719b7d6ba38614202fbbf96634365be7c4bedc698d2826f1f"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/project-creation-modes.tsx",
+      "bytes": 12925,
+      "sha256": "1f28c9efe1ef7bec0aa9e906ef333dffc904b47729feef4777b463fa3907d6dd"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/reference-image-upload.tsx",
+      "bytes": 4269,
+      "sha256": "20d67b25d318342ba3110f057a1bc27e8b4a5f91e3d9b5c9605336d3dca07d43"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/scene-count-field.tsx",
+      "bytes": 1323,
+      "sha256": "14c0f1f305b4948e7b793cb23a0ee652df81cea2f508ac6c27a7a30ffaf7f0b5"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/sky.tsx",
+      "bytes": 75,
+      "sha256": "9c2cb64a6ea008a053c4cc4e25123bb7cb957c85323fe5cd17fb1304edc8ea66"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/soundtrack-upload.tsx",
+      "bytes": 4913,
+      "sha256": "3c55d2f4d65eaa6b6b97aa5e243792d958bbbb253de8fe645c89601c2e20c3b0"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/status-badge.tsx",
+      "bytes": 2048,
+      "sha256": "1035d2c5221d6532c7e1936ac7f21cb6ec0ebce07e5450c34a889854454bf169"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/submit-button.tsx",
+      "bytes": 567,
+      "sha256": "a4265d235dc5ac0d588201ed42a7c1653ef19037337797f4969bdbd3ffce5020"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/theme-toggle.tsx",
+      "bytes": 1976,
+      "sha256": "5a1b953237fdc54b7924982bf7a8187a95280fb424c8f08c4909aee08752eec7"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/thumbnail-preview.tsx",
+      "bytes": 5905,
+      "sha256": "a6a558486fc3314f1501ecb265fe53ce1df98b0238065f1f795be433ae5fb247"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/ui.tsx",
+      "bytes": 9316,
+      "sha256": "787d96692e2b9999a831b2699782f96eefb607623143c7c14ecdbbf71612f730"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/components/workspace-bar.tsx",
+      "bytes": 1090,
+      "sha256": "0de18363a1e1cd21afd084a299a2ac234467260dfc31b6d404e9f72430a4bdeb"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/db/index.ts",
+      "bytes": 1063,
+      "sha256": "24fa484a3c619666c8837c4b4243f65bae2004fa7e742c336b7ba983f05afe48"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/db/schema.ts",
+      "bytes": 13668,
+      "sha256": "18bd264276fc670e8614df7598a5fa9cafaf2c3defe9588c8cd7ead3bf8d40b6"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/i18n/action.ts",
+      "bytes": 513,
+      "sha256": "e5e47ffb9b4aa18c802a8e95ab8c0acd3be16f5ecd7603a45672db42d6946fab"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/i18n/client.tsx",
+      "bytes": 594,
+      "sha256": "7149c49cce28c173fff9d2c972164dbec16e03afd0e56d5fbe89c0697efe999e"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/i18n/config.ts",
+      "bytes": 1509,
+      "sha256": "9d423d38645a485742185091b60df497d3d087af4069dc178033302e4fd96e98"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/i18n/server.ts",
+      "bytes": 465,
+      "sha256": "c47afbd829bac54e6915807a8f10c656c2386b5c8d3d05897d5ab2eae00aea6c"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/i18n/dictionaries/en.ts",
+      "bytes": 29011,
+      "sha256": "b126f5fb834af67cf6d9b9a097dcfa62ea462bdc2a46b3ab870cd6b50dbad4d8"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/i18n/dictionaries/index.ts",
+      "bytes": 313,
+      "sha256": "c9647f1cef9bb3b5e9b62542eca6949cd1649ac4e68ee380475b460837ed333a"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/i18n/dictionaries/vi.ts",
+      "bytes": 32255,
+      "sha256": "6987483ece25d1a7fa05a25367798f2d66fb17215eed64a5c01b2d8fe960eb2a"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/active-niche.ts",
+      "bytes": 679,
+      "sha256": "2a6913d33f033ec262ce957f8264acbaf72d748793266fddabb3fc68e808778f"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/env.ts",
+      "bytes": 1340,
+      "sha256": "6bfc45c5c94ec0181876b2d513d55763b3d64cd38f4033e0ef7c46b4a2478e64"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/file-stream.test.ts",
+      "bytes": 2149,
+      "sha256": "2d3434137e31a5f33658e8adf3cb954200c0c89fee79e6dcc6861ed08c6f027e"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/file-stream.ts",
+      "bytes": 2053,
+      "sha256": "a516dcfd32cb4beccbdc486ac109d6bca7540ce0136de5ce95af42bf27ea26df"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/imported-script.test.ts",
+      "bytes": 4248,
+      "sha256": "e91a60862f871bec92e57673ab0ebb2b71acd9fd894662e81d14e80f7376db5a"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/imported-script.ts",
+      "bytes": 7241,
+      "sha256": "6b84e6bc987c03cd947cdf73cc82574963521924b3f493037ea8bb8d0ba9418e"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/product-image-sheet.test.ts",
+      "bytes": 1725,
+      "sha256": "a4dc85e981c04a07fc2e3c5ed37d2966fca0a94b7843ef050dbba3fb08d61e4d"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/product-image-sheet.ts",
+      "bytes": 976,
+      "sha256": "552753312fee20d2f34bc9354ef949cb4b62df9e7d09595d371ea1fe02ba9de3"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/product-reference.test.ts",
+      "bytes": 1648,
+      "sha256": "b3ebbaab98b3492d38e54827e601dcf80db0592aca7786c60b64f9b9060b8772"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/product-reference.ts",
+      "bytes": 2328,
+      "sha256": "0ba0d86cfe23ab6f2b8edbe4a3e31d056d571a4d2db73c0270879a188d82699d"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/production.ts",
+      "bytes": 878,
+      "sha256": "c77a02eb44a210af66e4f4de5fdfb4834e939608fe16bd53cc7b60a9a0e31c70"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/queue.ts",
+      "bytes": 6446,
+      "sha256": "039faf256677944ce8e05060cb9f483d6732bde89bb7b2717b462dfab5de9515"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/reference-image.ts",
+      "bytes": 386,
+      "sha256": "68398ddad0232c20266eefa96ba9ba61133fb2663f6c3fb09cce9336d3269e3f"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/scene-errors.ts",
+      "bytes": 1785,
+      "sha256": "51454c36356ceb9439783c1a2baa8fb43991d7f8bcab4a91161b82836fd79513"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/soundtrack.ts",
+      "bytes": 421,
+      "sha256": "157aa7c8f942498f6804fe873c2bdf0abef374e0db3c5c2869457f225dd8abc0"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/storage.ts",
+      "bytes": 1896,
+      "sha256": "8e7b4c0429d816b2e4b32b2a952d231062d90bc3e970f9c7dba6622ea74bea98"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/storyboard.test.ts",
+      "bytes": 2491,
+      "sha256": "ba948dae840afee8d1865aed685d88d622979fae61d90b200eb93ef77e4f4a8b"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/storyboard.ts",
+      "bytes": 4067,
+      "sha256": "aaac4b947c975e54ae1b5bf9d6ffaf37334f540be94706b68491994d097effd0"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/thumbnail-styles.ts",
+      "bytes": 420,
+      "sha256": "ee16893b5dca47fa18d01fc8ccc5654837a92dd3395afaefa3c6d137deb24c92"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/views.ts",
+      "bytes": 4586,
+      "sha256": "3a76d8d0b179b99e761251b5db7d74dcaa0426f05079463d87c97ddc9949405e"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/pipeline/jobs.ts",
+      "bytes": 40711,
+      "sha256": "d0780815824e0883326f40e8116012d4d677a2dd695cf46298935baff26752fd"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/pipeline/prompts.ts",
+      "bytes": 35932,
+      "sha256": "6d415c729a52a05494e11bc14a166a16994fd96e302953f388680deb1d458c99"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/pipeline/reels.ts",
+      "bytes": 5766,
+      "sha256": "45568143cf64181230ffe921b14c1108e62b06ff3dbed5ec15f169fe99cb1afa"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/pipeline/render.ts",
+      "bytes": 12424,
+      "sha256": "ec7a0cce3f0784bf895f43c690ec5427a024f1336ab163e6530dabee35e249ff"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/pipeline/shorts.ts",
+      "bytes": 8100,
+      "sha256": "b4dd452835eb70b7a0521b36995e2acdcbd6d3902fefddc099cefc635e2aca05"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/pipeline/thumbnail.ts",
+      "bytes": 13362,
+      "sha256": "507d427d4a7a74c1fbfbd99af53218e5e430ac04bebbc49ae7c536249f7fdb0b"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/pipeline/voiceover.ts",
+      "bytes": 1758,
+      "sha256": "ecd269f2d0279e40fa8583af33116444ce17c82b92a2fa58ddaba07b9c02eccd"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/providers/elevenlabs.ts",
+      "bytes": 1313,
+      "sha256": "c9ee323d0e6e435dcd14cdb1408ce447a493e281a77a51079945730496aa5cfe"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/providers/facebook.ts",
+      "bytes": 5705,
+      "sha256": "83b28fe3ad94692900f1fc0636c05c772025587b30baee9eef6f6d1f950a9fb1"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/providers/gateway.ts",
+      "bytes": 3563,
+      "sha256": "9293b872ea8ff4be52ca91f6b4f462358198253ea71fd3997c871d5159f14e5a"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/providers/index.ts",
+      "bytes": 336,
+      "sha256": "8f0ce36528ea7b00608102efd6000bd1aff81c9c7e4936f3735b45d9c1a211ff"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/providers/instagram.ts",
+      "bytes": 4204,
+      "sha256": "7b575775f9aee2c40ce30068a7d9d75d51c4fb5da8c3bcb3c5e20490908197c8"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/providers/muse2api.ts",
+      "bytes": 5566,
+      "sha256": "6d73213ab294aa2f846303d030fa5fc05773f58ba8feb44c7ccf5339699ee3de"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/lib/providers/types.ts",
+      "bytes": 983,
+      "sha256": "152e084b4d93e8b10302a2acdb2b6ed022d5f115e4dea4520b61918c8b2877d7"
+    },
+    {
+      "path": "moonreel/moonreel-studio/src/worker/index.ts",
+      "bytes": 2853,
+      "sha256": "c15362a29098de241388b67ec81da9402b13f03572d1a70317fa42c7181e3d19"
+    },
+    {
+      "path": "muse2api-local/.env.example",
+      "bytes": 2021,
+      "sha256": "fbae0d2532ca40e08c04b9fdb66c9930cfdc11caa07bc77f60dc654b11814664"
+    },
+    {
+      "path": "muse2api-local/.gitignore",
+      "bytes": 879,
+      "sha256": "d4224e6d68fb1d02e40b0d5f1b3c0f89598e9e52a30d2761e40e546c698486f0"
+    },
+    {
+      "path": "muse2api-local/admin.html",
+      "bytes": 86092,
+      "sha256": "f6c27d1d755096a535e18c2fa308c505f6a99ae8cb766a2262fee20db82b183b"
+    },
+    {
+      "path": "muse2api-local/app.py",
+      "bytes": 106641,
+      "sha256": "4b5dea84a16ece476187f91fb7741b05fc4205c81ad1fce980d75188dd17b417"
+    },
+    {
+      "path": "muse2api-local/cdp.py",
+      "bytes": 2584,
+      "sha256": "a177cb4c20ba62fadc22af5fbd5a78c4c88f408a22e5e205a8b67fe731bda095"
+    },
+    {
+      "path": "muse2api-local/config.py",
+      "bytes": 6622,
+      "sha256": "3780a5f071b94ea22ad9fb0106f7543d65567dddd51ca3e313a5a9aee7779aeb"
+    },
+    {
+      "path": "muse2api-local/docker-compose.yml",
+      "bytes": 794,
+      "sha256": "5a9f797f5d553f42e9e3391694eab5fe5064a6f85bc1a87c28c3ab92eb068c5c"
+    },
+    {
+      "path": "muse2api-local/Dockerfile",
+      "bytes": 1105,
+      "sha256": "cc2def5dff66efbee5ad1d0194d4f9b60bc5466cffae2f6cf2282233a006763a"
+    },
+    {
+      "path": "muse2api-local/engine.py",
+      "bytes": 61933,
+      "sha256": "b1b4cf4a2daf32a2891e4f9366b1d1ca7c229bf57c89ca1e112e5857372ce95f"
+    },
+    {
+      "path": "muse2api-local/LICENSE",
+      "bytes": 1094,
+      "sha256": "4f3b30d039ec0354736b1b0e4b08bf709bb9d9624561913f86f53b6aab2caffc"
+    },
+    {
+      "path": "muse2api-local/login_bridge.py",
+      "bytes": 15833,
+      "sha256": "272fe637a970bcb3e1434d3934803bb165898a357dba3d8cc4f0238ce0087743"
+    },
+    {
+      "path": "muse2api-local/README.md",
+      "bytes": 4460,
+      "sha256": "c7a4bf66840a50a7655de0bcbf424a1994aa3f9e30410890a1a1654a8c6d8ffc"
+    },
+    {
+      "path": "muse2api-local/README.vi.md",
+      "bytes": 6943,
+      "sha256": "dea504f05011e24c5e703810bcccfbbe4e99957aaca14ece073f4c0648aa3b57"
+    },
+    {
+      "path": "muse2api-local/requirements.txt",
+      "bytes": 120,
+      "sha256": "9acfb29ecdf33e542f663cd38510c7e3534637d8580c6af9cb775b6fc89654ef"
+    },
+    {
+      "path": "muse2api-local/store.py",
+      "bytes": 13578,
+      "sha256": "b988e75fe95adb4a13162f34a4c8f18b77c5e453fa1fdb298db2110c5f4153df"
+    },
+    {
+      "path": "muse2api-local/version.json",
+      "bytes": 595,
+      "sha256": "ebdd803ecad500cdab614ed7ce05e070036add98a2a6e9d5b9fa5d06467bdffb"
+    },
+    {
+      "path": "muse2api-local/deploy/muse2api.service",
+      "bytes": 743,
+      "sha256": "adaa249a7760f2cc2f9c3da178de21e4cca241dadc88a9bd5bcfbc2b3fad66d9"
+    },
+    {
+      "path": "muse2api-local/deploy/nginx.example.conf",
+      "bytes": 1418,
+      "sha256": "457b384202cb4eb897acabcffe0a386672a8f87dca1e6b33ae36d6c4a9e8ed03"
+    },
+    {
+      "path": "muse2api-local/extension/manifest.json",
+      "bytes": 477,
+      "sha256": "1cc5b8bb7560a7edee467fdabc1c3c6e4e77cdd932f7ab10e112fea7bb29c355"
+    },
+    {
+      "path": "muse2api-local/extension/popup.html",
+      "bytes": 3087,
+      "sha256": "fa16bb36cd4cf67f43e1aa4e0f9f00dbedcd5be2e61ba6c5efaed5fd423b3dca"
+    },
+    {
+      "path": "muse2api-local/extension/popup.js",
+      "bytes": 4728,
+      "sha256": "bd505287d4b599725ba04a34e38011929e4d285dd137853ee361605fceaa2a6c"
+    },
+    {
+      "path": "muse2api-local/extension/README.md",
+      "bytes": 2276,
+      "sha256": "4dbedd33b4a5cc2d3bee351496c1e3cd32e51ad45b38d3576a5630330e71b9a9"
+    },
+    {
+      "path": "muse2api-local/tests/probe_cast_picker_ui.py",
+      "bytes": 2221,
+      "sha256": "a30e45c665e19e6d46ab64d919fe278ed95af27b7dc4b0e2331cd54bcba4437a"
+    },
+    {
+      "path": "muse2api-local/tests/probe_connect_browser.py",
+      "bytes": 1151,
+      "sha256": "e4826dc45517a28bac80aa091febf7e2669e75d85a5dfbe79cd46816051e89bc"
+    },
+    {
+      "path": "muse2api-local/tests/probe_connect_mobile_ui.py",
+      "bytes": 16417,
+      "sha256": "0d468dbd99ef616b19b10eb74c49c59470ed6a4a5e2e725972e2fd95c476ca60"
+    },
+    {
+      "path": "muse2api-local/tests/probe_import_script.py",
+      "bytes": 4602,
+      "sha256": "4cd900b3511b8d625d432c0081fe009a496adbf7cb296506ca560989ab8bef42"
+    },
+    {
+      "path": "muse2api-local/tests/probe_otp_input.py",
+      "bytes": 3737,
+      "sha256": "8770cf369f57c11f536330644321dd545a195e8eb89803d461118edb01cc9d07"
+    },
+    {
+      "path": "muse2api-local/tests/probe_product_reference_ui.py",
+      "bytes": 9061,
+      "sha256": "ce3df59a63e4255ff480fd58fce8cdead3c40585203bfcd757365e9e30a7bfbc"
+    },
+    {
+      "path": "muse2api-local/tests/probe_storyboard_brief_ui.py",
+      "bytes": 3249,
+      "sha256": "835b18cfb8bda44da5f8c7ef5945e8d149dcb3ce40b82f7395168ea28b542db5"
+    },
+    {
+      "path": "muse2api-local/tests/probe_thumbnail_preload.py",
+      "bytes": 5715,
+      "sha256": "73aa4baee8226221407bfb25718ac13b0555a07ff0f7501c8ce355262884944f"
+    },
+    {
+      "path": "muse2api-local/tests/test_admin_base_url.py",
+      "bytes": 4402,
+      "sha256": "d6931d50540a7c5a2d81d8ac91359185e86a7d1e6551a52970f67d2987d920a2"
+    },
+    {
+      "path": "muse2api-local/tests/test_async_images.py",
+      "bytes": 10514,
+      "sha256": "9226cbee3a89bfbb71ee14bf6dc56ed87101f3c3d998f48b6a604ff8fe742d18"
+    },
+    {
+      "path": "muse2api-local/tests/test_concurrency.py",
+      "bytes": 5331,
+      "sha256": "7ddb990c1156ea130c5ae0cae38a80751455a9d01c3d755582c0e2098d95734f"
+    },
+    {
+      "path": "muse2api-local/tests/test_login_bridge.py",
+      "bytes": 5425,
+      "sha256": "d835a0266fd3f840bfd368080dc0069ee12768f5a7eb732a5e46e04ff2cb69ea"
+    },
+    {
+      "path": "muse2api-local/tests/test_media_delete.py",
+      "bytes": 4637,
+      "sha256": "e7c505bc55b5e043f8ed774fbae8b7cab03e4205f76476eaed2e566d12a88f8a"
+    },
+    {
+      "path": "muse2api-local/tests/test_media_selection.py",
+      "bytes": 5113,
+      "sha256": "d7b609a99c9018319a9fc55d3fc2450d78200e32e20c56531e4fc3dc1181683e"
+    },
+    {
+      "path": "muse2api-local/tests/test_session_health.py",
+      "bytes": 6624,
+      "sha256": "b35afe0a4dcb0fbe62c75158655dfb426c06a82aadd83c486a491ee54da009d9"
+    },
+    {
+      "path": "muse2api-local/tests/test_vm_wait.py",
+      "bytes": 984,
+      "sha256": "8ed0fe93eb92e30d09d862b354075ed2173bfad6c21f5ee1c5a2b5cb25c844d8"
+    },
+    {
+      "path": "muse2api-local/tools/get_muse_cookie.py",
+      "bytes": 18320,
+      "sha256": "26511966bd4ed88e44f0095b58fcc3559faa0953d0093c9c6829ad96cdf7f0e1"
+    },
+    {
+      "path": "muse2api-local/tools/mailtm_otp.py",
+      "bytes": 4425,
+      "sha256": "fac320300e25927cc3f903a3aa88e00394240a364200b9c62a18ef150e6213f6"
+    },
+    {
+      "path": "muse2api-local/tools/muse2api_cookie_importer.user.js",
+      "bytes": 16294,
+      "sha256": "02e67c99112414628db2399bec82401ed00644e444342cfee68f50d6a9f0d247"
+    },
+    {
+      "path": "muse2api-local/tools/verify_engine_selectors.py",
+      "bytes": 4318,
+      "sha256": "202ee382edb24d2a32c026f9e641e686fa9bcb880f9ce8ada56acf197ee6eaff"
+    }
+  ],
+  "excluded": [
+    {
+      "path": "moonreel/.git",
+      "reason": "generated dependencies, build output, VCS metadata or private runtime data"
+    },
+    {
+      "path": "moonreel/moonreel-studio/.next",
+      "reason": "generated dependencies, build output, VCS metadata or private runtime data"
+    },
+    {
+      "path": "moonreel/moonreel-studio/node_modules",
+      "reason": "generated dependencies, build output, VCS metadata or private runtime data"
+    },
+    {
+      "path": "moonreel/moonreel-studio/.env",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/.env.docker-backup",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/dev-error.log",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/dev.log",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/docker-compose.override.yml",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/next-env.d.ts",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/tsconfig.tsbuildinfo",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/ui-preview-error.log",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/ui-preview.log",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/web-error.log",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/web.log",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/web.pid",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/worker-error.log",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/worker.log",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel/moonreel-studio/worker.pid",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "muse2api-local/.git",
+      "reason": "generated dependencies, build output, VCS metadata or private runtime data"
+    },
+    {
+      "path": "muse2api-local/.venv",
+      "reason": "generated dependencies, build output, VCS metadata or private runtime data"
+    },
+    {
+      "path": "muse2api-local/data",
+      "reason": "generated dependencies, build output, VCS metadata or private runtime data"
+    },
+    {
+      "path": "muse2api-local/__pycache__",
+      "reason": "generated dependencies, build output, VCS metadata or private runtime data"
+    },
+    {
+      "path": "muse2api-local/.env",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "muse2api-local/muse-error.log",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "muse2api-local/muse.log",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "muse2api-local/muse.pid",
+      "reason": "local secret/configuration, generated output or machine-specific override"
+    },
+    {
+      "path": "moonreel-data",
+      "reason": "local generated/user media, debug screenshots, obsolete design snapshot or machine logs; not needed to build current interface"
+    },
+    {
+      "path": "ui-checks",
+      "reason": "local generated/user media, debug screenshots, obsolete design snapshot or machine logs; not needed to build current interface"
+    },
+    {
+      "path": "ui-preview",
+      "reason": "local generated/user media, debug screenshots, obsolete design snapshot or machine logs; not needed to build current interface"
+    },
+    {
+      "path": "UI-REDESIGN-HANDOFF",
+      "reason": "local generated/user media, debug screenshots, obsolete design snapshot or machine logs; not needed to build current interface"
+    },
+    {
+      "path": "connect-probe.jpg",
+      "reason": "local generated/user media, debug screenshots, obsolete design snapshot or machine logs; not needed to build current interface"
+    },
+    {
+      "path": "desktop-video-fixed.png",
+      "reason": "local generated/user media, debug screenshots, obsolete design snapshot or machine logs; not needed to build current interface"
+    },
+    {
+      "path": "wsl-repair.log",
+      "reason": "local generated/user media, debug screenshots, obsolete design snapshot or machine logs; not needed to build current interface"
+    }
+  ]
+}

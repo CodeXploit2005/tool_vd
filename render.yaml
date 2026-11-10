@@ -1,0 +1,79 @@
+# Paid services/disks. Review the selected plans in Render before creating resources.
+services:
+  - type: web
+    name: keyzone-studio
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: standard
+    region: singapore
+    autoDeployTrigger: 'off'
+    healthCheckPath: /api/ready
+    maxShutdownDelaySeconds: 300
+    disk:
+      name: studio-media
+      mountPath: /var/data/studio
+      sizeGB: 20
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: keyzone-db
+          property: connectionString
+      - key: MUSE2API_INTERNAL_HOSTPORT
+        fromService:
+          name: keyzone-muse
+          type: pserv
+          property: hostport
+      - key: MUSE2API_KEY
+        fromService:
+          name: keyzone-muse
+          type: pserv
+          envVarKey: MUSE2API_KEY
+      - key: STUDIO_ACCESS_USER
+        value: admin
+      - key: STUDIO_ACCESS_PASSWORD
+        sync: false
+      - key: MUSE_CONCURRENCY
+        value: '1'
+      - key: STORAGE_DIR
+        value: /var/data/studio/storage
+      - key: NICHES_DIR
+        value: /var/data/studio/niches
+  - type: pserv
+    name: keyzone-muse
+    runtime: docker
+    dockerfilePath: ./muse2api-local/Dockerfile
+    dockerContext: ./muse2api-local
+    plan: standard
+    region: singapore
+    autoDeployTrigger: 'off'
+    maxShutdownDelaySeconds: 300
+    disk:
+      name: muse-sessions
+      mountPath: /var/data/muse
+      sizeGB: 10
+    envVars:
+      - key: PORT
+        value: '18610'
+      - key: MUSE2API_KEY
+        generateValue: true
+      - key: MUSE2API_DATA_DIR
+        value: /var/data/muse/data
+      - key: MUSE2API_PROFILE_ROOT
+        value: /var/data/muse/profiles
+      - key: MUSE2API_CONCURRENCY
+        value: '1'
+      - key: MUSE2API_VIDEO_TIMEOUT
+        value: '900'
+      - key: MUSE2API_UPDATER_ENABLED
+        value: '0'
+      - key: MUSE2API_ALLOW_WEB_PUSH
+        value: '0'
+databases:
+  - name: keyzone-db
+    databaseName: keyzone
+    user: keyzone
+    plan: basic-256mb
+    region: singapore
+    postgresMajorVersion: '17'
+    ipAllowList: []

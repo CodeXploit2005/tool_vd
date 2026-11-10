@@ -1,0 +1,52 @@
+name: Source checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  studio:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: ci-only-password
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 20
+    defaults:
+      run:
+        working-directory: moonreel/moonreel-studio
+    env:
+      DATABASE_URL: postgresql://postgres:ci-only-password@localhost:5432/postgres
+      MUSE2API_KEY: build-only
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+          cache-dependency-path: moonreel/moonreel-studio/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: node --import tsx --test src/lib/*.test.ts
+      - run: pnpm build
+      - run: node ../../deploy/tests/verify-deploy.mjs
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r muse2api-local/requirements.txt
+      - run: python -m unittest discover -s muse2api-local/tests -p test_login_bridge.py
+      - run: python -m compileall -q muse2api-local

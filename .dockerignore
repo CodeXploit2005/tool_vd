@@ -1,0 +1,15 @@
+**/.git
+**/node_modules
+**/.next
+**/.venv
+**/venv
+**/__pycache__
+**/.env
+**/.env.*
+**/*.log
+**/*.pid
+**/*.tsbuildinfo
+muse2api-local/data
+moonreel-data
+ui-checks
+ui-preview

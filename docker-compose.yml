@@ -1,0 +1,50 @@
+services:
+  postgres:
+    image: postgres:17-bookworm
+    environment:
+      POSTGRES_USER: keyzone
+      POSTGRES_DB: keyzone
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U keyzone -d keyzone]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  muse:
+    build: ./muse2api-local
+    environment:
+      MUSE2API_KEY: ${MUSE2API_KEY:?set MUSE2API_KEY}
+      MUSE2API_DATA_DIR: /var/data/muse/data
+      MUSE2API_PROFILE_ROOT: /var/data/muse/profiles
+      MUSE2API_CONCURRENCY: '1'
+      MUSE2API_UPDATER_ENABLED: '0'
+      MUSE2API_ALLOW_WEB_PUSH: '0'
+    volumes:
+      - muse-data:/var/data/muse
+    shm_size: 1gb
+  studio:
+    build: .
+    ports:
+      - '3000:10000'
+    environment:
+      DATABASE_URL: postgresql://keyzone:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@postgres:5432/keyzone
+      MUSE2API_BASE_URL: http://muse:18610
+      MUSE2API_KEY: ${MUSE2API_KEY:?set MUSE2API_KEY}
+      STUDIO_ACCESS_USER: ${STUDIO_ACCESS_USER:-admin}
+      STUDIO_ACCESS_PASSWORD: ${STUDIO_ACCESS_PASSWORD:?set STUDIO_ACCESS_PASSWORD}
+      MUSE_CONCURRENCY: '1'
+      PORT: '10000'
+    volumes:
+      - studio-data:/var/data/studio
+    depends_on:
+      postgres:
+        condition: service_healthy
+      muse:
+        condition: service_started
+    init: true
+volumes:
+  postgres-data:
+  muse-data:
+  studio-data:
