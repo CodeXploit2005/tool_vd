@@ -1,0 +1,56 @@
+{
+  "filename": "KeyZone-Video-Studio-0.7.6-beta3-Android.apk",
+  "version": "0.7.6-beta.3",
+  "platform": "android",
+  "bytes": 70309112,
+  "sha256": "65a5e31dc9231aba6bcb041951c54d0d8fb194953ca42bb0ae37d2cd46bfe753",
+  "requiresLicense": true,
+  "licenseServer": "https://keyzone-6laz.onrender.com",
+  "parts": [
+    {
+      "path": "downloads/android/part-000.bin",
+      "bytes": 8388608,
+      "sha256": "0c229409848493495d9d1a6e65e6213d897a37f330b15ae60c32178d78c94c2b"
+    },
+    {
+      "path": "downloads/android/part-001.bin",
+      "bytes": 8388608,
+      "sha256": "1cf6f96e0f04c3eb63262b38240c146629688e0ef59e71103623dbdb3782e9d5"
+    },
+    {
+      "path": "downloads/android/part-002.bin",
+      "bytes": 8388608,
+      "sha256": "1ceacd4217e2646cfa2a8327a737075997771fd68d8ea99859c84d3b999eb64f"
+    },
+    {
+      "path": "downloads/android/part-003.bin",
+      "bytes": 8388608,
+      "sha256": "8cef50209b3e8b30a5a3072c55888088e652ae2270e7343ecb9bf03eb8cb7f1d"
+    },
+    {
+      "path": "downloads/android/part-004.bin",
+      "bytes": 8388608,
+      "sha256": "39017c9309840a5381a0eebe8fad60cbd904700fae43b4f7ea3cb4e87972a9f7"
+    },
+    {
+      "path": "downloads/android/part-005.bin",
+      "bytes": 8388608,
+      "sha256": "c0e5289663e1d03607ae2e1f5d4a83877ddcb373e8096a531f602fe1ed871fb6"
+    },
+    {
+      "path": "downloads/android/part-006.bin",
+      "bytes": 8388608,
+      "sha256": "0721d16e533ff24b9e0fc35f89857c8e89b1acf9e2a0b35094e6a7dd7fe5e09e"
+    },
+    {
+      "path": "downloads/android/part-007.bin",
+      "bytes": 8388608,
+      "sha256": "27970c788382386734d46a0e415f1e2eda9cd1ed6f5e6bac49d0e160d45fb2b1"
+    },
+    {
+      "path": "downloads/android/part-008.bin",
+      "bytes": 3200248,
+      "sha256": "ea40f87075f56027c9ffa323cd0b06759766819682d552b1fe833bf31d920265"
+    }
+  ]
+}

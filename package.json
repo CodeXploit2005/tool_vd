@@ -1,0 +1,7 @@
+{
+  "name": "tool-vd",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix release-site run dev"
+  }
+}
