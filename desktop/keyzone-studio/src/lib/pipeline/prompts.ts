@@ -1,3 +1,4 @@
+import { directingGuidance } from "../directing-guidance";
 import { z } from "zod";
 import type { AspectRatio, Character, Niche, Scene } from "@/db/schema";
 import { PRODUCT_REFERENCE_PLANNING } from "@/lib/product-reference";
@@ -98,7 +99,7 @@ function brief({ niche, cast, topic, aspectRatio, productReference }: ScriptInpu
   return `# Niche: ${niche.name}
 ${niche.description}
 
-# Niche rules
+# Niche defaults (the creator’s explicit creative direction takes priority)
 ${niche.scriptInstructions}
 
 Tone: ${niche.tone || "natural"}
@@ -110,7 +111,9 @@ ${castBlock(cast, niche)}
 
 # Topic
 ${topic}
-${productReference ? PRODUCT_REFERENCE_PLANNING : ""}`;
+${productReference ? PRODUCT_REFERENCE_PLANNING : ""}
+
+${directingGuidance(aspectRatio)}`;
 }
 
 const SCENE_SHAPE =
@@ -142,7 +145,7 @@ function sceneRules(niche: Niche, cast: Character[]) {
       : `"narration": what is spoken in that scene, in ${niche.language}, at most 25 words, so it fits ${niche.sceneSeconds} seconds.`
   }
 - "visualPrompt": in English, describe what is on screen (setting, action, expression, lighting). Refer to characters by name and do not describe their looks, they are added automatically. No on-screen text.
-- "camera": in English, one slow, smooth camera move (e.g. "slow push-in", "static medium shot"). Avoid fast action: it distorts the character.
+- "camera": in English, describe the requested framing and motion. If unspecified, choose a clear static shot or a move motivated by the action.
 - "continuesPrevious": true only when the shot picks up exactly where the previous shot ends: same place, same characters, same moment, the action simply carrying on, with no cut to a new angle (the clip starts from the previous clip's last frame, which saves an image). false for scene 1, for any cut to another place, time, subject or framing, and after ${MAX_CHAINED_SCENES} chained shots in a row.
 - "characters": ${
     cast.length > 1
@@ -152,10 +155,9 @@ function sceneRules(niche: Niche, cast: Character[]) {
 }
 
 function storyEnds(niche: Niche, unit: "scene" | "beat") {
-  const first = unit === "scene" ? "Scene 1 must hook" : "Beat 1 hooks";
   return niche.format === "wordless"
-    ? `${first} the viewer in the first 2 seconds with a situation that makes them guess. The last ${unit} is the payoff that makes the lesson land without a word; no call to action.`
-    : `${first} the viewer in the first 2 seconds. The last ${unit} ends with a call to action.`;
+    ? `Let the action carry the first and final ${unit}. Use the ending requested in the brief.`
+    : `Use the requested opening and ending. If unspecified, begin with a concrete moment and finish on its consequence. Include a call to action only when it serves the brief.`;
 }
 
 /** The whole script in one reply, for scripts up to SCRIPT_PART_SCENES scenes. */
@@ -225,7 +227,7 @@ export function buildAmbientScriptPrompt(input: ScriptInput) {
 # Niche: ${niche.name}
 ${niche.description}
 
-# Niche rules
+# Niche defaults (the creator’s explicit creative direction takes priority)
 ${niche.scriptInstructions}
 
 Mood: ${niche.tone || "calm, cosy"}
@@ -554,7 +556,7 @@ export function buildThumbnailPrompt(input: {
     composition[aspectRatio],
     niche.format === "ambient"
       ? "Wide, inviting establishing view, soft warm light, gentle depth, rich but calm colour, crisp detail."
-      : "One clear focal subject, sharp eyes, strong emotion, dramatic rim light, high contrast, rich saturated colour, shallow depth of field, crisp detail.",
+      : "Choose a focal detail that truthfully represents the video and reads at phone size. Match the requested mood and palette. Use contrast or negative space where useful.",
     niche.visualStyle && `Visual style: ${niche.visualStyle}.`,
     input.productReference ? "Keep the product's existing printed label and logo. No added captions, watermarks or borders." : "No text, letters, numbers, logos, watermarks or borders. Nothing graphic or gory.",
   ]

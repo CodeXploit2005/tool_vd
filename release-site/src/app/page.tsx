@@ -1,3 +1,4 @@
+import windowsRelease from "../../public/release-windows.json";
 import React from "react";
 import {
   Check,
@@ -111,7 +112,7 @@ export default function ReleasePage() {
               <span className="h-2 w-2 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee]" />
               <span>STUDIO CỦA BẠN • TRÊN MÁY CỦA BẠN</span>
               <span className="rounded-full bg-cyan-400/20 px-2 py-0.5 font-mono text-[10px] text-cyan-200">
-                v0.7.7
+                v{windowsRelease.version}
               </span>
             </div>
 

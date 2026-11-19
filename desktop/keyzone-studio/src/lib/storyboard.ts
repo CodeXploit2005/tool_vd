@@ -1,3 +1,4 @@
+import { directingGuidance } from "./directing-guidance";
 import { z } from "zod";
 import { MAX_IMPORTED_SCENES, validateImportedScenes } from "./imported-script";
 import { limitChains, parseReply } from "./pipeline/prompts";
@@ -22,6 +23,7 @@ ${countRule} Aspect ratio ${ratio}. Keep character appearance, setting, visual s
 Follow all story acts and required camera moments. Do not add niche characters, style or a presenter.
 ${productReference ? PRODUCT_REFERENCE_PLANNING : ""}
 The renderer currently makes approximately 10-second clips per shot; do not promise custom durations or total runtime.
+${directingGuidance(ratio)}
 USER BRIEF:\n${brief}`;
   const outline = parseReply(await chat(`${context}
 Return JSON only: {"title":"short title","beats":["shot 1 story beat and continuity notes", "..."]}.

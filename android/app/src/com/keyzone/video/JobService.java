@@ -121,6 +121,8 @@ public class JobService extends Service {
         }
         if(kind.equals("thumbnail")){
             update("Đang tạo thumbnail…",id);JSONArray scenes=project.getJSONArray("scenes");String image="";
+            int cover=project.optInt("thumbnailScene",0);
+            if(cover>=1&&cover<=scenes.length())image=scenes.getJSONObject(cover-1).optString("imageFile");
             for(int i=0;i<scenes.length()&&image.isEmpty();i++)image=scenes.getJSONObject(i).optString("imageFile");
             if(image.isEmpty()&&!project.optString("videoFile").isEmpty())image=renderer.lastFrame(project.getString("videoFile"));
             if(image.isEmpty())throw new Exception("Hãy tạo ít nhất một cảnh trước khi tạo thumbnail.");
@@ -151,9 +153,14 @@ public class JobService extends Service {
         project.put("status","scripting").put("error","");store.save("projects",project);update("Đang viết kịch bản…",project.getString("id"));
         int count=Math.max(1,Math.min(40,project.optInt("sceneCount",niche.optInt("sceneCount",6))));
         String prompt="Viết kịch bản video gồm đúng "+count+" cảnh, chủ đề: "+project.optString("topic")+". Ngôn ngữ: "+niche.optString("language","vi")+". Giọng điệu: "+niche.optString("tone")+". Hướng dẫn ngách: "+niche.optString("scriptInstructions")+". Phong cách hình ảnh: "+niche.optString("visualStyle")+". Chỉ trả về một JSON hợp lệ, không markdown, với dạng {\"title\":\"Tên video\",\"scenes\":[{\"narration\":\"Lời đọc\",\"visualPrompt\":\"Detailed English image and motion prompt\",\"camera\":\"camera direction\",\"continuesPrevious\":false}]}. Mỗi cảnh phải có visualPrompt chi tiết. "+(niche.optString("format").equals("wordless")?"Video không lời: narration để trống.":"");
+        prompt += " Chủ đề và chỉ dẫn cụ thể của người dùng được ưu tiên hơn gợi ý sáng tạo. Khi chưa có chỉ dẫn, chọn một hành động nhìn thấy được cho mỗi cảnh, dùng cỡ cảnh để làm rõ hành động và giữ hướng chuyển động, đạo cụ, nhân vật nhất quán. Nếu yêu cầu một cú máy, chia các thời điểm của cùng hành động. Không tự thêm lời kêu gọi, cú cắt hoặc kịch tính trái ý người dùng.";
+        if ("9:16".equals(project.optString("aspectRatio"))) prompt += " Với khung dọc, ưu tiên chủ thể dễ đọc trên điện thoại. Nhịp mở đầu theo ý đồ của người dùng.";
+        prompt += " Nếu có cảnh đại diện tốt cho chủ đề và dễ nhận ra khi thu nhỏ, có thể thêm thumbnailScene (số thứ tự cảnh từ 1) vào JSON.";
         JSONObject result=parseJson(chat(prompt));JSONArray scenes=result.getJSONArray("scenes");MainActivity.validateScenes(scenes);
         if(scenes.length()!=count)throw new Exception("Muse trả về sai số cảnh yêu cầu. Hãy thử viết lại kịch bản.");
         for(int i=0;i<scenes.length();i++){JSONObject scene=scenes.getJSONObject(i);scene.put("status","pending");scene.remove("imageFile");scene.remove("clipFile");}
+        int cover=result.optInt("thumbnailScene",0);
+        if(cover>=1&&cover<=scenes.length()) project.put("thumbnailScene",cover); else project.remove("thumbnailScene");
         store.save("projects",project.put("title",result.optString("title",project.getString("title"))).put("scenes",scenes).put("status","script_ready").put("scriptSource","generated"));
     }
     private String chat(String prompt) throws Exception {
